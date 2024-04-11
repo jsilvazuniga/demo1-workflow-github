@@ -32,5 +32,8 @@ on:
         - name: Define Variable USERNAME 
           run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
           
-        - name: Run multi-line script 
-          run: echo "Hello from IP: ${{ steps.ip.outputs.ipv4 }}" python hola-mundo.py
+        - name: Run IP
+          run: echo "Hello from IP: ${{ steps.ip.outputs.ipv4 }}"
+
+        - name: Correr script python
+          run: python hola_mundo.py
