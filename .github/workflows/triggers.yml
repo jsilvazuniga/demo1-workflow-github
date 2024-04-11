@@ -9,7 +9,8 @@ on:
   types: [opened, labeled] 
   branches: ['main', 'aprendiendo-**'] 
   paths: ['**.yml'] 
-  schedule: # SCHEDULE - cron: '59 23 * * SUN' 
+  schedule: # SCHEDULE 
+    - cron: '59 23 * * SUN' 
   
   workflow_dispatch: # WORKFLOW_DISPATCH 
   jobs: job-t: 
