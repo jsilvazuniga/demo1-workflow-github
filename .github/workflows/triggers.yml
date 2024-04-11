@@ -1,10 +1,11 @@
 name: Triggers 
 run-name: Praxis 3 Triggers! 
 on: 
-  push: #PUSH branches: ['main', 'aprendiendo-**'] 
+  push: #PUSH 
+  branches: ['main', 'aprendiendo-**'] 
   paths: ['**.yml'] 
   
-  pull_request: # PR 
+  pull_request: #PR 
   types: [opened, labeled] 
   branches: ['main', 'aprendiendo-**'] 
   paths: ['**.yml'] 
