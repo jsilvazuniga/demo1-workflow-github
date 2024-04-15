@@ -1,5 +1,5 @@
-name: Extensions
-run-name: Reto 4 - Aprende a usar los distintos Contextos
+name: Expresiones
+run-name: Reto 4 - Aprende a usar los distintos Contextos - Expresiones
 on: [push, pull_request]
 env:
   var1: Aprendiendo
