@@ -13,7 +13,6 @@ on:
       - cron: '59 23 * * SUN' 
   
   workflow_dispatch: # WORKFLOW_DISPATCH 
-    workflow_dispatch:
     inputs:
       logLevel:
         description: 'Log level'
