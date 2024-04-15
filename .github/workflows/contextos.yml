@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo frutas
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja y el ${{ vars.FRUTA4 }} es amarillo"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja y el ${{ vars.FRUTA4 }} es amarillo ${{ github.repository }}"
