@@ -6,7 +6,7 @@ on:
     paths: ['**.yml'] 
   
   pull_request: #PR 
-    types: [opened, labeled] 
+    types: [opened, synchronize, reopened, labeled] 
     branches: ['main', 'aprendiendo-**'] 
     paths: ['**.yml'] 
     schedule: # SCHEDULE 
@@ -50,7 +50,7 @@ jobs:
       - run: |
           echo "Log level: $LEVEL"
           echo "Tags: $TAGS"
-          echo "Environment: $ENVIRONMENT"
+          echo "Environment: $ENVIRONMENT" >> $GITHUB_ENV
         env:
           LEVEL: ${{ inputs.logLevel }}
           TAGS: ${{ inputs.tags }}
