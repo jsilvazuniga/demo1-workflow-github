@@ -12,6 +12,6 @@ jobs:
       - name: frutas_steps
         env: 
           NOMBRE: "..Jorge"
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja, NOMBRE = $NOMBRE, VARS = ${{ vars.ENV_NAME }}, secrets : ${{ secrets.MY_SECRET_NAME }}"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja, NOMBRE = $NOMBRE,, secrets : ${{ secrets.MY_SECRET_NAME }}"
 
         
