@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo frutas
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja. - NOMBRE: $NOMBRE"
         env: 
           NOMBRE: "..Jorge"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja. - NOMBRE: $NOMBRE"
