@@ -12,4 +12,4 @@ jobs:
       - name: echo frutas
         env: 
           NOMBRE: "..Jorge"
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja. - NOMBRE: $NOMBRE"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja"
