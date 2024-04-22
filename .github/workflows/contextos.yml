@@ -1,5 +1,5 @@
 name: varialbles
-run-name:  Reto 5 - Aprende a usar las Variables de Entorno
+run-name:  Aprender a usar las Variables de Entorno
 on: [push, pull_request]
 env:
   fruta1: Manzana
@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo frutas
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja y el ${{ vars.FRUTA4 }} es amarillo ${{ github.repository }}"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja y el ${{ vars.ENV_NAME }} es amarillo ${{ github.repository }} - NOMBRE: $NOMBRE"
+        env: 
+          NOMBRE: "Jorge"
