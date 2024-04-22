@@ -9,7 +9,7 @@ jobs:
   Variables:
     runs-on: ubuntu-latest
     steps:
-      - name: echo frutas
+      - name: frutas_steps
         env: 
           NOMBRE: "..Jorge"
-        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja"
+        run: echo "La $fruta1 es roja, la $fruta2 es verde, la $fruta3 es roja, NOMBRE = $NOMBRE"
